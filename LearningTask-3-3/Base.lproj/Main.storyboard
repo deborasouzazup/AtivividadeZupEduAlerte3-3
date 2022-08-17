@@ -36,10 +36,19 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="Close"/>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awsome Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBe-n7-UMh">
+                                        <rect key="frame" x="32" y="26.5" width="298" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="mBc-gZ-d8i" firstAttribute="top" secondItem="F0b-Ka-0p4" secondAttribute="top" constant="32" id="7Rd-WH-BfP"/>
+                                    <constraint firstItem="mBc-gZ-d8i" firstAttribute="leading" secondItem="nBe-n7-UMh" secondAttribute="trailing" constant="32" id="Hkt-q4-L7M"/>
+                                    <constraint firstItem="nBe-n7-UMh" firstAttribute="centerY" secondItem="mBc-gZ-d8i" secondAttribute="centerY" id="SeH-xQ-8ZZ"/>
+                                    <constraint firstItem="nBe-n7-UMh" firstAttribute="leading" secondItem="F0b-Ka-0p4" secondAttribute="leading" constant="32" id="Sl4-rF-YNm"/>
                                     <constraint firstAttribute="height" constant="400" id="gXW-Ny-y8X"/>
                                     <constraint firstAttribute="trailing" secondItem="mBc-gZ-d8i" secondAttribute="trailing" constant="32" id="wBL-ST-beS"/>
                                 </constraints>
@@ -64,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="80"/>
+            <point key="canvasLocation" x="34.782608695652179" y="79.6875"/>
         </scene>
     </scenes>
     <resources>
