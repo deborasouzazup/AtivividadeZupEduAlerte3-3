@@ -42,18 +42,52 @@
                                         <color key="textColor" systemColor="secondaryLabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastre seu email para receber ofertas, campanhas e promoções especiais. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPV-W0-Nfb" userLabel="Label description">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastre seu email para receber ofertas, campanhas e promoções especiais. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPV-W0-Nfb" userLabel="Label Description">
                                         <rect key="frame" x="32" y="78" width="298" height="64.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                         <color key="textColor" systemColor="secondaryLabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nG-iw-xCu" userLabel="View Email">
+                                        <rect key="frame" x="32" y="206.5" width="350" height="49"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fI1-9I-Puv" userLabel="Text Field Email">
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="wsy-Cf-Izd"/>
+                                                </constraints>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                            </textField>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wdj-xm-iFj" userLabel="View borda">
+                                                <rect key="frame" x="0.0" y="48" width="350" height="1"/>
+                                                <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="hy0-jA-aSh"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Wdj-xm-iFj" firstAttribute="top" secondItem="fI1-9I-Puv" secondAttribute="bottom" id="AuY-Io-YxY"/>
+                                            <constraint firstAttribute="bottom" secondItem="Wdj-xm-iFj" secondAttribute="bottom" id="J2L-dj-XiH"/>
+                                            <constraint firstItem="Wdj-xm-iFj" firstAttribute="trailing" secondItem="fI1-9I-Puv" secondAttribute="trailing" id="SSy-nf-vsz"/>
+                                            <constraint firstItem="fI1-9I-Puv" firstAttribute="leading" secondItem="8nG-iw-xCu" secondAttribute="leading" id="kFZ-FP-arW"/>
+                                            <constraint firstItem="Wdj-xm-iFj" firstAttribute="leading" secondItem="fI1-9I-Puv" secondAttribute="leading" id="lIl-hV-BRO"/>
+                                            <constraint firstItem="fI1-9I-Puv" firstAttribute="top" secondItem="8nG-iw-xCu" secondAttribute="top" id="sfc-k2-xzV"/>
+                                            <constraint firstAttribute="trailing" secondItem="fI1-9I-Puv" secondAttribute="trailing" id="tXY-de-3Ax"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="8nG-iw-xCu" firstAttribute="leading" secondItem="FPV-W0-Nfb" secondAttribute="leading" id="1PH-Ns-7fo"/>
                                     <constraint firstItem="FPV-W0-Nfb" firstAttribute="leading" secondItem="nBe-n7-UMh" secondAttribute="leading" id="388-j6-I32"/>
                                     <constraint firstItem="mBc-gZ-d8i" firstAttribute="top" secondItem="F0b-Ka-0p4" secondAttribute="top" constant="32" id="7Rd-WH-BfP"/>
+                                    <constraint firstItem="8nG-iw-xCu" firstAttribute="trailing" secondItem="mBc-gZ-d8i" secondAttribute="trailing" id="9fE-Dr-BHG"/>
                                     <constraint firstItem="mBc-gZ-d8i" firstAttribute="leading" secondItem="nBe-n7-UMh" secondAttribute="trailing" constant="32" id="Hkt-q4-L7M"/>
+                                    <constraint firstItem="8nG-iw-xCu" firstAttribute="top" secondItem="FPV-W0-Nfb" secondAttribute="bottom" constant="64" id="NGp-w7-0ya"/>
                                     <constraint firstItem="FPV-W0-Nfb" firstAttribute="trailing" secondItem="nBe-n7-UMh" secondAttribute="trailing" id="Pf1-SC-fEA"/>
                                     <constraint firstItem="nBe-n7-UMh" firstAttribute="centerY" secondItem="mBc-gZ-d8i" secondAttribute="centerY" id="SeH-xQ-8ZZ"/>
                                     <constraint firstItem="nBe-n7-UMh" firstAttribute="leading" secondItem="F0b-Ka-0p4" secondAttribute="leading" constant="32" id="Sl4-rF-YNm"/>
@@ -95,6 +129,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
