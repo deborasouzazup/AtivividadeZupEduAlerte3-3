@@ -7,23 +7,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class NewsletterViewController: UIViewController {
+    
+    @IBOutlet weak var emailTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func botaoComfirmarPressionado(_ sender: UIButton) {
+        exibeAlertaDeConfirmacao()
     }
-    */
-
+    
+    func exibeAlertaDeConfirmacao() {
+        let alert = UIAlertController(title: "Tudo pronto", message: "Email \(emailTextField.text!) cadastrado com sucess.\nEm breve você começará a receber oportunidades imperdíveis", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }
