@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EC6BC2128AFFDAA00CC08AB /* NewsletterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6BC2028AFFDAA00CC08AB /* NewsletterViewController.swift */; };
 		58E560B02795F416006D3EE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E560AF2795F416006D3EE1 /* AppDelegate.swift */; };
 		58E560B22795F416006D3EE1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E560B12795F416006D3EE1 /* SceneDelegate.swift */; };
 		58E560B72795F416006D3EE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58E560B52795F416006D3EE1 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EC6BC2028AFFDAA00CC08AB /* NewsletterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsletterViewController.swift; sourceTree = "<group>"; };
 		58E560AC2795F416006D3EE1 /* LearningTask-3-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LearningTask-3-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58E560AF2795F416006D3EE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58E560B12795F416006D3EE1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				58E560AF2795F416006D3EE1 /* AppDelegate.swift */,
 				58E560B12795F416006D3EE1 /* SceneDelegate.swift */,
+				2EC6BC2028AFFDAA00CC08AB /* NewsletterViewController.swift */,
 				58E560B52795F416006D3EE1 /* Main.storyboard */,
 				58E560B82795F418006D3EE1 /* Assets.xcassets */,
 				58E560BA2795F419006D3EE1 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EC6BC2128AFFDAA00CC08AB /* NewsletterViewController.swift in Sources */,
 				58E560B02795F416006D3EE1 /* AppDelegate.swift in Sources */,
 				58E560B22795F416006D3EE1 /* SceneDelegate.swift in Sources */,
 			);

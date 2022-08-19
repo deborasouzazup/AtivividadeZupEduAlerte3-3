@@ -9,22 +9,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Newsletter View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="NewsletterViewController" customModule="LearningTask_3_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hQj-v3-eab">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newsletter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZA-eF-Myz" userLabel="Label Titulo">
-                                <rect key="frame" x="32" y="429" width="350" height="43"/>
+                                <rect key="frame" x="32" y="426" width="350" height="43"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0b-Ka-0p4" userLabel="View Principal">
-                                <rect key="frame" x="0.0" y="496" width="414" height="400"/>
+                                <rect key="frame" x="0.0" y="493" width="414" height="403"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBc-gZ-d8i" userLabel="Button Fechar">
                                         <rect key="frame" x="362" y="32" width="20" height="20"/>
@@ -37,19 +37,19 @@
                                         <buttonConfiguration key="configuration" style="plain" image="Close"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awsome Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBe-n7-UMh" userLabel="Label Subtitle">
-                                        <rect key="frame" x="32" y="26.5" width="298" height="31.5"/>
+                                        <rect key="frame" x="32" y="26" width="298" height="31.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <color key="textColor" systemColor="secondaryLabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cadastre seu email para receber ofertas, campanhas e promoções especiais. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPV-W0-Nfb" userLabel="Label Description">
-                                        <rect key="frame" x="32" y="78" width="298" height="64.5"/>
+                                        <rect key="frame" x="32" y="77.5" width="298" height="64.5"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                         <color key="textColor" systemColor="secondaryLabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nG-iw-xCu" userLabel="View Email">
-                                        <rect key="frame" x="32" y="206.5" width="350" height="49"/>
+                                        <rect key="frame" x="32" y="206" width="350" height="49"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fI1-9I-Puv" userLabel="Text Field Email">
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="48"/>
@@ -79,20 +79,38 @@
                                             <constraint firstAttribute="trailing" secondItem="fI1-9I-Puv" secondAttribute="trailing" id="tXY-de-3Ax"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ms2-bI-eWc" userLabel="Button Confirmar">
+                                        <rect key="frame" x="32" y="279" width="350" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="64" id="GcR-9r-ZiZ"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Quero receber novidades" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background"/>
+                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="baseBackgroundColor" name="Eagle"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="botaoComfirmarPressionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4LW-re-VUq"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="8nG-iw-xCu" firstAttribute="leading" secondItem="FPV-W0-Nfb" secondAttribute="leading" id="1PH-Ns-7fo"/>
                                     <constraint firstItem="FPV-W0-Nfb" firstAttribute="leading" secondItem="nBe-n7-UMh" secondAttribute="leading" id="388-j6-I32"/>
+                                    <constraint firstItem="ms2-bI-eWc" firstAttribute="trailing" secondItem="8nG-iw-xCu" secondAttribute="trailing" id="6UM-br-1wF"/>
                                     <constraint firstItem="mBc-gZ-d8i" firstAttribute="top" secondItem="F0b-Ka-0p4" secondAttribute="top" constant="32" id="7Rd-WH-BfP"/>
                                     <constraint firstItem="8nG-iw-xCu" firstAttribute="trailing" secondItem="mBc-gZ-d8i" secondAttribute="trailing" id="9fE-Dr-BHG"/>
+                                    <constraint firstItem="ms2-bI-eWc" firstAttribute="top" secondItem="8nG-iw-xCu" secondAttribute="bottom" constant="24" id="CuL-x2-RZi"/>
                                     <constraint firstItem="mBc-gZ-d8i" firstAttribute="leading" secondItem="nBe-n7-UMh" secondAttribute="trailing" constant="32" id="Hkt-q4-L7M"/>
                                     <constraint firstItem="8nG-iw-xCu" firstAttribute="top" secondItem="FPV-W0-Nfb" secondAttribute="bottom" constant="64" id="NGp-w7-0ya"/>
                                     <constraint firstItem="FPV-W0-Nfb" firstAttribute="trailing" secondItem="nBe-n7-UMh" secondAttribute="trailing" id="Pf1-SC-fEA"/>
                                     <constraint firstItem="nBe-n7-UMh" firstAttribute="centerY" secondItem="mBc-gZ-d8i" secondAttribute="centerY" id="SeH-xQ-8ZZ"/>
                                     <constraint firstItem="nBe-n7-UMh" firstAttribute="leading" secondItem="F0b-Ka-0p4" secondAttribute="leading" constant="32" id="Sl4-rF-YNm"/>
-                                    <constraint firstAttribute="height" constant="400" id="gXW-Ny-y8X"/>
                                     <constraint firstItem="FPV-W0-Nfb" firstAttribute="top" secondItem="nBe-n7-UMh" secondAttribute="bottom" constant="20" id="gZG-mq-rtx"/>
+                                    <constraint firstItem="ms2-bI-eWc" firstAttribute="leading" secondItem="8nG-iw-xCu" secondAttribute="leading" id="qa1-Qg-zQw"/>
                                     <constraint firstAttribute="trailing" secondItem="mBc-gZ-d8i" secondAttribute="trailing" constant="32" id="wBL-ST-beS"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -107,12 +125,16 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="F0b-Ka-0p4" secondAttribute="bottom" id="6a2-C0-fp0"/>
                             <constraint firstItem="8EF-WU-MX1" firstAttribute="trailing" secondItem="F0b-Ka-0p4" secondAttribute="trailing" id="F1I-4d-D8a"/>
+                            <constraint firstItem="8EF-WU-MX1" firstAttribute="bottom" secondItem="ms2-bI-eWc" secondAttribute="bottom" constant="26" id="HqE-QJ-hKI"/>
                             <constraint firstItem="8EF-WU-MX1" firstAttribute="trailing" secondItem="lZA-eF-Myz" secondAttribute="trailing" constant="32" id="bi7-fD-5sU"/>
                             <constraint firstItem="F0b-Ka-0p4" firstAttribute="leading" secondItem="8EF-WU-MX1" secondAttribute="leading" id="gKq-gR-BHB"/>
                             <constraint firstItem="lZA-eF-Myz" firstAttribute="leading" secondItem="8EF-WU-MX1" secondAttribute="leading" constant="32" id="sYP-iP-JJj"/>
                             <constraint firstItem="F0b-Ka-0p4" firstAttribute="top" secondItem="lZA-eF-Myz" secondAttribute="bottom" constant="24" id="wLD-7p-tpq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="fI1-9I-Puv" id="Xt2-d0-eXD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
